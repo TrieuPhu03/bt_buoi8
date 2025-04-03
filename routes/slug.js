@@ -40,6 +40,7 @@ router.get("/:categorySlug/:productSlug", async function (req, res, next) {
     const category = await categoryModel.findOne({
       slug: req.params.categorySlug,
     });
+    console.log(category)
 
     if (!category) {
       return CreateErrorRes(res, 404, new Error("Category not found"));

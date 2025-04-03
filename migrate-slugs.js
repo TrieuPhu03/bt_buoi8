@@ -6,7 +6,7 @@ const productModel = require("./schemas/product");
 async function migrateData() {
   try {
     // Connect to your MongoDB
-    await mongoose.connect("your_mongodb_connection_string", {
+    await mongoose.connect("mongodb+srv://phunguyentrieu3:4VRoG14EiOhFwkXe@cluster0.j6tau.mongodb.net/C5", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
